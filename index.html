@@ -27,29 +27,28 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+        <div class="offmenu" id="menuParent">
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+          <ul class="mobile-menu">
+            <li>
+              <a class="active" href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Preise</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+          <div class="buttons-wrap mt-5 flex-column align-items-stretch">
+            <a href="#" class="default-button button default-button--black">
+              Registrieren
+            </a>
+            <a href="#" class="default-button button default-button--white">
+              Anmelden
+            </a>
+          </div>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
@@ -66,7 +65,7 @@
                 <img src="images/logo.png" alt="" />
               </a>
 
-              <div class="header-menu">
+              <div class="header-menu d-lg-block d-none">
                 <ul>
                   <li>
                     <a class="active" href="#">Home</a>
@@ -80,7 +79,7 @@
                 </ul>
               </div>
 
-              <div class="buttons-wrap">
+              <div class="buttons-wrap d-lg-flex d-none">
                 <a href="#" class="default-button button default-button--black">
                   Registrieren
                 </a>
@@ -88,6 +87,10 @@
                   Anmelden
                 </a>
               </div>
+
+              <a href="#" class="offcanvas-open d-lg-none">
+                <i class="far fa-bars"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -189,6 +192,11 @@
 
       <!-- footer-section -->
       <footer class="footer-section">
+        <img
+          src="images/footer-top-white.png"
+          alt=""
+          class="footer-top-white"
+        />
         <div class="container">
           <div class="footer-section__inner">
             <div class="footer-top__row">
@@ -212,7 +220,7 @@
                   <li><a href="#">Dolor sit amet conse</a></li>
                   <li><a href="#">Ctetur adipiscing</a></li>
                   <li><a href="#"> Fusce varius dolor quis </a></li>
-                  <li><a href="#">Dignissim lacinia Nullam ma</a></li>
+                  <li><a href="#">Dignissim lacinia</a></li>
                 </ul>
               </div>
               <div class="footer-menu-column">
@@ -223,7 +231,7 @@
                   <li><a href="#">Dolor sit amet conse</a></li>
                   <li><a href="#">Ctetur adipiscing</a></li>
                   <li><a href="#"> Fusce varius dolor quis </a></li>
-                  <li><a href="#">Dignissim lacinia Nullam ma</a></li>
+                  <li><a href="#">Dignissim lacinia</a></li>
                 </ul>
               </div>
               <div class="footer-menu-column">
@@ -234,7 +242,7 @@
                   <li><a href="#">Dolor sit amet conse</a></li>
                   <li><a href="#">Ctetur adipiscing</a></li>
                   <li><a href="#"> Fusce varius dolor quis </a></li>
-                  <li><a href="#">Dignissim lacinia Nullam ma</a></li>
+                  <li><a href="#">Dignissim lacinia</a></li>
                 </ul>
               </div>
             </div>

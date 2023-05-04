@@ -1,3 +1,77 @@
+/* -----buttons----- */
+/* -default-button- */
+.default-button {
+    min-height: 39px;
+    min-width: 99px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: var(--theme__color1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s;
+}
+.default-button:hover {
+    color: #fff;
+}
+.default-button--black {
+    background: #12100B;
+}
+.default-button--black:hover {
+    background: var(--theme__color2);
+}
+.default-button--white {
+    background: white;
+    color: var(--theme__color1);
+}
+.default-button--white:hover {
+    background: var(--theme__color1);
+    color: #fff;
+}
+/* -default-button-end */
+
+/* -big-button- */
+.big-button {
+    min-height: 74px;
+    min-width: 99px;
+    padding: 10px 28px;
+    font-size: 24.45px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: var(--theme__color1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0px 17px 24px 0px rgba(7, 77, 129, 0.6);
+}
+.big-button:hover {
+    color: #fff;
+}
+.big-button--black {
+    background: #12100B;
+}
+.big-button--black:hover {
+    background: var(--theme__color2);
+}
+.big-button--white {
+    background: white;
+    color: var(--theme__color1);
+}
+.big-button--white:hover {
+    background: var(--theme__color1);
+    color: #fff;
+}
+/* -big-button-end */
+/* -----buttons-----end */
+
+
 /* small-tools */
 .underline {
     text-decoration: underline !important;

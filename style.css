@@ -14,6 +14,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
+  color: #000;
   overflow-x: hidden;
   word-wrap: break-word;
   word-break: normal;
@@ -82,11 +83,13 @@ p:last-child{
   width: 100%;
   overflow: hidden;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 1500px;
+    max-width: 1195px;
   }
-}
+  .container-max {
+    max-width: 100%;
+  }
 }
 
 
@@ -99,6 +102,64 @@ p:last-child{
   left: 0;
   width: 100%;
   z-index: 100;
+}
+.header-in {
+  
+}
+.header-section__inner {
+  padding: 45px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+.header-bg-shape {
+  position: absolute;
+  left: calc(50% - 285px);
+  top: 0;
+  z-index: -1;
+}
+.header-bg-shape img {
+  max-width: initial;
+}
+.header-logo {
+
+}
+.header-logo img {
+
+}
+.header-menu {
+
+}
+.header-menu > ul {
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
+.header-menu > ul > li {
+
+}
+.header-menu > ul > li > a {
+  font-style: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.header-menu > ul > li > a:hover {
+
+}
+.header-menu > ul > li > a.active {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.buttons-wrap {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+.buttons-wrap .button {
+
 }
 /* header-end */
 
@@ -225,3 +286,179 @@ p:last-child{
   }
 }
 /* --preloader-end-- */
+
+
+/* ---common-content--- */
+.h2 {
+  font-size: 48px;
+  margin: 0 0 140px;
+  font-weight: 500;
+}
+.h4 {
+  font-size: 36px;
+  line-height: 2.22;
+  font-weight: 500;
+}
+.h5 {
+  font-size: 30px;
+  line-height: 2;
+  font-weight: 500;
+}
+.cont-blk {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cont-blk--center {
+  align-items: center;
+  text-align: center;
+}
+.cont-blk .bottom-button {
+  margin-top: 100px;
+}
+/* ---common-content---end */
+
+
+/* ---hero-section--- */
+.hero-section {
+  padding: 100px 0 500px;
+  margin-top: 264px;
+  background: url('images/heor-bg.png') no-repeat center center/100% 100%;
+  color: #fff;
+}
+.hero-section__inner {
+
+}
+.hero-content {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+/* ---hero-section---end */
+
+
+/* ---section-a--- */
+.section-a {
+  padding: 630px 0 520px;
+  background: url('images/graphic-1.png') no-repeat center bottom/1230px auto;
+}
+.section-a__inner {
+
+}
+.section-a-content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* ---section-a---end */
+
+
+/* ---port-section--- */
+.port-section {
+  padding: 390px 0 230px;
+}
+.port-section__inner {
+
+}
+.port-section__title {
+  margin-bottom: 150px;
+}
+
+.port-cards-container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.port-cards-row {
+  --bs-gutter-x: 78px;
+  --bs-gutter-y: var(--bs-gutter-x);
+}
+.port-card {
+  padding: 90px 42px 56px 48px;
+  border-radius: 55px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 17px 24px 0px rgba(7, 77, 129, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.port-card h2 {
+  font-size: 48px;
+  margin: 0 0 64px;
+  font-weight: 500;
+}
+.port-card p {
+  line-height: 1.7;
+  font-size: 30px;
+  font-weight: 500;
+}
+.port-card .bottom-button {
+  margin-top: 60px;
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--theme__color1);
+  border-bottom: 2px solid var(--theme__color1);
+  transition: 0.3s;
+}
+.port-card .bottom-button:hover {
+  color: var(--theme__color2);
+  border-bottom-color: var(--theme__color2);
+}
+/* ---port-section---end */
+
+
+
+/* ---footer-section--- */
+.footer-section {
+  padding: 274px 0 128px;
+  background: url('images/footer-bg.png') no-repeat center center/100% 100%;
+  color: #fff;
+}
+.footer-section__inner {
+
+}
+
+.footer-top__row {
+  display: flex;
+}
+.footer-logo-column {
+  width: 42%;
+  padding-right: 5%;
+}
+.footer-logo {
+  width: 167px;
+  margin-bottom: 60px;
+  display: block;
+}
+.footer-logo-column p {
+  font-weight: 14px;
+  line-height: 2;
+}
+
+.footer-menu-column {
+  width: 20%;
+}
+.footer-menu-column h4 {
+  font-size: 19px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.footer-menu-column .line {
+  height: 3px;
+  width: 25px;
+  margin-bottom: 15px;
+  background: #fff;
+  display: block;
+}
+.footer-menu {
+
+}
+.footer-menu  li {
+
+}
+.footer-menu  li a {
+  font-weight: 14px;
+  line-height: 2;
+}
+.footer-menu  li a:hover {
+
+}
+/* ---footer-section---end */

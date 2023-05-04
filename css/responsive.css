@@ -201,6 +201,11 @@
 }
 
 
-@media (max-width: 390px) {
- 
+@media (max-width: 370px) {
+    .hero-section {
+        padding: 70px 0 300px;
+    }
+    .section-a {
+        margin-top: -190px;
+    }
 }

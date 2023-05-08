@@ -65,9 +65,7 @@
         padding: 80px 0 290px;
         margin-top: 80px;
     }
-    .section-a {
-        background-size: 50% auto !important;
-    }
+    
 
     .h4 {
         font-size: 21px;
@@ -124,6 +122,11 @@
     }
     .footer-bottom {
         flex-direction: column;
+    }
+
+
+    .section-a {
+        background-size: 50% auto !important;
     }
 }
 
